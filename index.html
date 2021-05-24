@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Tabelle bauen</title>
+			</head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script>
+			"use strict";
+			
+			// Funktionsname festlegen
+			function programm() {
+			
+			// Variablen deklarieren
+			var vAusgabe="";
+		
+			// Eingabe i startet bei 0
+			var i;
+			// Schleife und die Bedingungen festlegen
+			// inkrement , runterzählen heißt dekrement i--, oder i=i-1;
+			for (i=1; i<9; i++){
+ 
+			// Verarbeitung, in diesem Falle, das i einfach nur hochzählen bis die Bedingung endet			
+			
+			vAusgabe = vAusgabe + i + ", ";
+			}
+			
+			// Ausgabe erstellen 
+			document.getElementById("divAusgabe").innerHTML = vAusgabe;
+		}
+				
+	
+	
+		</script>
+
+
+	<body>
+		<h1>Zählen</h1>
+        
+		<button onClick="programm();">Wertetabelle erzeugen!</button><br /><br />
+        <div id="divAusgabe">Button klicken!</div>
+	</body>
+</html>
